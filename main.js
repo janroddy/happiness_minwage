@@ -170,8 +170,8 @@ svg.selectAll("path")
 
 //reset width and height for second chart
 margin = {top: 40, right: 40, bottom: 20, left: 40},
-w = 500 + margin.left + margin.right,
-h = 230 + margin.top + margin.bottom;
+w = 500 - margin.left - margin.right,
+h = 350 - margin.top - margin.bottom;
 
 
 
@@ -202,8 +202,8 @@ svg2.append("text")
         .style("font-size", "16px") 
         .style("font-family", "optima") 
         .style("font-family", "Palatino") 
-        .style("font-weight", "bold") 
-        .text("Correlation of Minimum Wage and Happiness");
+        .style("font-weight", "bold"); 
+      //  .text("Correlation of Minimum Wage and Happiness");
 
    // Add X axis
 var x = d3.scaleLinear()
@@ -211,14 +211,18 @@ var x = d3.scaleLinear()
   .range([0, w]);
   //  .range([ 0, (2 * w / 3)  ]);
   svg2.append("g")
-  .attr("transform", "translate(0," + h   + ")")
+  .attr("transform", "translate(0," + h + ")")
   // .attr("transform", "translate(0," + (295 )   + ")")
   .call(d3.axisBottom(x)
   .tickFormat(d => d));  
   // .tickFormat(d3.format("d"))); 
-
-
-    // Add Y axis
+// Add X axis label:
+  svg2.append("text")
+      .attr("text-anchor", "end")
+      .attr("x", w/2 + margin.left + 160)
+      .attr("y", h + margin.top - 50)
+      .text("Minimum Wage ($)");
+ 
 var y = d3.scaleLinear()
       .domain( [32, 70])
       .range([h, 0]);
@@ -226,10 +230,15 @@ var y = d3.scaleLinear()
    //   .attr("transform", "translate(0," + w  + ")")
       .call(d3.axisLeft(y)
       .tickFormat(d => d));  
-
+// Y axis label:
+  svg2.append("text")
+      .attr("text-anchor", "end")
+      .attr("transform", "rotate(-90)")
+      .attr("y", -margin.left + 60 )
+      .attr("x", -margin.top - h/2 + 220)
+      .text("Happiness Score")
 
     var tooltip2 = d3.select("#container3").append("div") 
-     .append("table")
       .attr("class", "tooltip2")
       .style("opacity", 0);
 
@@ -242,8 +251,8 @@ var y = d3.scaleLinear()
 
       var mousemove2 = function(d) {
         tooltip2
-        .style("left", (d3.mouse(this)[0]) + 50 + "px")
-        .style("top", (d3.mouse(this)[1]) + 50 + "px")
+        .style("left", (d3.mouse(this)[0]) + 400 + "px")
+        .style("top", (d3.mouse(this)[1]) + 900 + "px")
         .html("State: " + d.State+ "<br/>" 
           + "Minimum Wage: $"+ d.minimumWage + "<br/>" 
           + "Happiness Score: " + d.totalScore 
@@ -254,9 +263,7 @@ var y = d3.scaleLinear()
         tooltip2
           .style("opacity", 0)
 
-      }
-   
-     
+      }     
     // Add the points
     svg2
       .append("g")     
