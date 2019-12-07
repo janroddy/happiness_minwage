@@ -1,10 +1,10 @@
 #container1 {
-	border: dashed; 
+	
 	text-align: center;
 }
 
 #container2 {
-	border: dashed;
+
 	text-align: center;
 	width: 50%;
 	
@@ -13,7 +13,6 @@
 #container3 {
 	text-align: center;
 	padding: 20px;
-	border: dashed;
 	/*margin:10px; */
 }
 
@@ -24,7 +23,6 @@
 }
 
 #data-notes {
-	border: dashed ;
 	width: 50%;
 	float: right;
 	
