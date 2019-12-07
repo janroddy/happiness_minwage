@@ -1,0 +1,102 @@
+#container1 {
+	border: dashed; 
+	text-align: center;
+}
+
+#container2 {
+	border: dashed;
+	text-align: center;
+	width: 50%;
+	
+}
+
+#container3 {
+	text-align: center;
+	padding: 20px;
+	border: dashed;
+	/*margin:10px; */
+}
+
+#data-source{
+  font-family: Veranda;
+  font-size: 12px;
+
+}
+
+#data-notes {
+	border: dashed ;
+	width: 50%;
+	float: right;
+	
+}
+
+.states {
+	stroke: #fff; 
+	stroke-width:1px;
+}
+
+.states:hover{
+	stroke: #000;
+	stroke-width:1px;
+	opacity: .2;
+}
+
+table {
+	border-collapse: collapse;
+    width: 60%;
+    font-size: 14px;
+    text-align: center;
+
+}
+
+table th{
+	padding-top: 4px;
+	padding-bottom: 4px;
+	text-align: left;
+	border: 2px solid #ddd;
+}
+
+table td, table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.tooltip1 { 
+  position: absolute;     
+  text-align: center;              
+  padding: 2px;       
+  font: 12px sans-serif;    
+  background: #fff; 
+  border: 0px;        
+  pointer-events: none; 	
+  border: solid, 1px; 
+  font-family: Georgia;
+  background-color: white;
+  padding: 10px;
+  /*border: 1px solid; */
+ /* border-color: black; */
+  text-align: left;
+}
+.tooltip2 {
+      
+  text-align: center; 
+  padding: 2px;       
+  font: 12px sans-serif;    
+  background: #fff; 
+  border: 0px;  
+  /*
+  position: absolute;     
+  text-align: center;              
+  padding: 2px;       
+  font: 12px sans-serif;    
+  background: #fff; 
+  border: 0px;        
+  pointer-events: none; 	
+  border: solid, 1px; 
+  font-family: Georgia;
+  background-color: white;
+  padding: 10px;
+  text-align: left;
+  */
+
+}

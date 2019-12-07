@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <title>Happiest States</title>
+        <link rel="shortcut icon" href="">
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.13.0/d3-legend.js"></script>
+        <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+  
+    </head>
+    
+    <body>
+        <div id="hypothesis"><p><b>Hypothesis: </b>States with a higher minimum wage tend to have a higher Happiness Score and lower economic inequality.</p>
+        </div>
+    	<div id="container1">
+
+        </div>
+        <div id="data-notes">
+    		<b>notes on the data: </b> <br>31 different metrics were studied when determining which states were the happiest. These metrics included the number of work hours, job security, adult depression, income growth, and even the weather.
+    		</div>
+       
+
+
+
+       <div id="container2">
+        <h2 text-align=center>Top 5 happiest States: </h2> 
+        <table textt-align="center">
+         <tr>
+    <th></th>
+    <th>Happiness Rank</th>
+    <th>Happiness Score</th>
+    <th>Minimum Wage</th>
+  </tr>
+  <tr>
+    <td>Hawaii</td>
+    <td>1</td>
+    <td>68.27</td>
+    <td>$10.10</td> 
+  </tr>
+  <tr>
+    <td>Utah</td>
+    <td>2</td>
+    <td>67.84</td>
+    <td>$7.25</td>
+  </tr>
+  <tr>
+    <td>Minnesota</td>
+    <td>3</td>
+    <td>67.26</td>
+    <td>$9.86</td>
+  </tr>
+  <tr>
+    <td>North Dakota</td>
+    <td>4</td>
+    <td>65.62</td>
+    <td>$7.25</td>
+  </tr>
+  <tr>
+    <td>California</td>
+    <td>5</td>
+    <td>63.14</td>
+    <td>$12</td>
+  </tr>
+      </table>
+
+        </div>
+        
+        <div id="container3">
+        </div> 
+        <div id="container4"> 
+        </div> 
+
+        </div id="data-source">
+        <div>
+        	<p style="text-align: right">Data Sources: <a href="http://worldpopulationreview.com/states/happiest-states/">World Population Review</a>
+            <br>
+            <a href="https://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml/">United States Census Bureau</a>
+        	</p>
+
+        </div>	
+        
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+
+     	  <script src="https://unpkg.com/d3-regression@1.2.4/dist/d3-regression.min.js"></script>
+        <script src="main.js"></script>
+		<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script> 
+    </body>
+</html>

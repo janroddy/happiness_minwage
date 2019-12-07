@@ -1,0 +1,454 @@
+{
+    "data": [
+        {
+            "overall": 1,
+            "State": "Hawaii",
+            "totalScore": "68.2700",
+            "emotAndPhysRank": 1,
+            "workEnvironRank": 30,
+            "communityAndEnvironRank": 4,
+            "Pop": 1416589
+        },
+        {
+            "overall": 2,
+            "State": "Utah",
+            "totalScore": "67.8400",
+            "emotAndPhysRank": 18,
+            "workEnvironRank": 1,
+            "communityAndEnvironRank": 2,
+            "Pop": 3221610
+        },
+        {
+            "overall": 3,
+            "State": "Minnesota",
+            "totalScore": "67.2600",
+            "emotAndPhysRank": 2,
+            "workEnvironRank": 6,
+            "communityAndEnvironRank": 10,
+            "Pop": 5655925
+        },
+        {
+            "overall": 4,
+            "State": "North Dakota",
+            "totalScore": "65.6200",
+            "emotAndPhysRank": 6,
+            "workEnvironRank": 9,
+            "communityAndEnvironRank": 6,
+            "Pop": 760900
+        },
+        {
+            "overall": 5,
+            "State": "California",
+            "totalScore": "63.1400",
+            "emotAndPhysRank": 4,
+            "workEnvironRank": 24,
+            "communityAndEnvironRank": 12,
+            "Pop": 39747267
+        },
+        {
+            "overall": 6,
+            "State": "Idaho",
+            "totalScore": "63.0900",
+            "emotAndPhysRank": 24,
+            "workEnvironRank": 2,
+            "communityAndEnvironRank": 1,
+            "Pop": 1790182
+        },
+        {
+            "overall": 7,
+            "State": "Maryland",
+            "totalScore": "61.7800",
+            "emotAndPhysRank": 7,
+            "workEnvironRank": 38,
+            "communityAndEnvironRank": 5,
+            "Pop": 6062917
+        },
+        {
+            "overall": 8,
+            "State": "Iowa",
+            "totalScore": "61.0700",
+            "emotAndPhysRank": 8,
+            "workEnvironRank": 18,
+            "communityAndEnvironRank": 11,
+            "Pop": 3167997
+        },
+        {
+            "overall": 9,
+            "State": "South Dakota",
+            "totalScore": "60.8000",
+            "emotAndPhysRank": 14,
+            "workEnvironRank": 13,
+            "communityAndEnvironRank": 8,
+            "Pop": 892631
+        },
+        {
+            "overall": 10,
+            "State": "Nebraska",
+            "totalScore": "59.1100",
+            "emotAndPhysRank": 10,
+            "workEnvironRank": 17,
+            "communityAndEnvironRank": 28,
+            "Pop": 1940919
+        },
+        {
+            "overall": 11,
+            "State": "Wisconsin",
+            "totalScore": "58.8700",
+            "emotAndPhysRank": 16,
+            "workEnvironRank": 11,
+            "communityAndEnvironRank": 14,
+            "Pop": 5832661
+        },
+        {
+            "overall": 12,
+            "State": "Connecticut",
+            "totalScore": "58.2400",
+            "emotAndPhysRank": 9,
+            "workEnvironRank": 40,
+            "communityAndEnvironRank": 18,
+            "Pop": 3567871
+        },
+        {
+            "overall": 13,
+            "State": "New Jersey",
+            "totalScore": "58.1000",
+            "emotAndPhysRank": 3,
+            "workEnvironRank": 44,
+            "communityAndEnvironRank": 38,
+            "Pop": 8922547
+        },
+        {
+            "overall": 14,
+            "State": "New York",
+            "totalScore": "57.3500",
+            "emotAndPhysRank": 5,
+            "workEnvironRank": 42,
+            "communityAndEnvironRank": 39,
+            "Pop": 19491339
+        },
+        {
+            "overall": 15,
+            "State": "Virginia",
+            "totalScore": "57.3500",
+            "emotAndPhysRank": 15,
+            "workEnvironRank": 25,
+            "communityAndEnvironRank": 27,
+            "Pop": 8571946
+        },
+        {
+            "overall": 16,
+            "State": "Massachusetts",
+            "totalScore": "56.8500",
+            "emotAndPhysRank": 13,
+            "workEnvironRank": 14,
+            "communityAndEnvironRank": 42,
+            "Pop": 6939373
+        },
+        {
+            "overall": 17,
+            "State": "Washington",
+            "totalScore": "56.4400",
+            "emotAndPhysRank": 29,
+            "workEnvironRank": 5,
+            "communityAndEnvironRank": 9,
+            "Pop": 7666343
+        },
+        {
+            "overall": 18,
+            "State": "Colorado",
+            "totalScore": "55.3800",
+            "emotAndPhysRank": 19,
+            "workEnvironRank": 3,
+            "communityAndEnvironRank": 46,
+            "Pop": 5770545
+        },
+        {
+            "overall": 19,
+            "State": "Georgia",
+            "totalScore": "55.1500",
+            "emotAndPhysRank": 25,
+            "workEnvironRank": 16,
+            "communityAndEnvironRank": 7,
+            "Pop": 10627767
+        },
+        {
+            "overall": 20,
+            "State": "North Carolina",
+            "totalScore": "53.6900",
+            "emotAndPhysRank": 21,
+            "workEnvironRank": 21,
+            "communityAndEnvironRank": 37,
+            "Pop": 10497741
+        },
+        {
+            "overall": 21,
+            "State": "Arizona",
+            "totalScore": "52.9200",
+            "emotAndPhysRank": 27,
+            "workEnvironRank": 12,
+            "communityAndEnvironRank": 34,
+            "Pop": 7275070
+        },
+        {
+            "overall": 22,
+            "State": "Texas",
+            "totalScore": "52.5600",
+            "emotAndPhysRank": 11,
+            "workEnvironRank": 28,
+            "communityAndEnvironRank": 49,
+            "Pop": 29087070
+        },
+        {
+            "overall": 23,
+            "State": "Illinois",
+            "totalScore": "52.4700",
+            "emotAndPhysRank": 12,
+            "workEnvironRank": 45,
+            "communityAndEnvironRank": 44,
+            "Pop": 12700381
+        },
+        {
+            "overall": 24,
+            "State": "New Hampshire",
+            "totalScore": "52.3700",
+            "emotAndPhysRank": 23,
+            "workEnvironRank": 27,
+            "communityAndEnvironRank": 31,
+            "Pop": 1363852
+        },
+        {
+            "overall": 25,
+            "State": "Kansas",
+            "totalScore": "52.3000",
+            "emotAndPhysRank": 22,
+            "workEnvironRank": 33,
+            "communityAndEnvironRank": 36,
+            "Pop": 2910931
+        },
+        {
+            "overall": 26,
+            "State": "Nevada",
+            "totalScore": "51.8000",
+            "emotAndPhysRank": 40,
+            "workEnvironRank": 15,
+            "communityAndEnvironRank": 3,
+            "Pop": 3087025
+        },
+        {
+            "overall": 27,
+            "State": "Delaware",
+            "totalScore": "51.6700",
+            "emotAndPhysRank": 17,
+            "workEnvironRank": 37,
+            "communityAndEnvironRank": 45,
+            "Pop": 975033
+        },
+        {
+            "overall": 28,
+            "State": "Montana",
+            "totalScore": "51.0800",
+            "emotAndPhysRank": 37,
+            "workEnvironRank": 7,
+            "communityAndEnvironRank": 17,
+            "Pop": 1074532
+        },
+        {
+            "overall": 29,
+            "State": "Florida",
+            "totalScore": "51.0100",
+            "emotAndPhysRank": 20,
+            "workEnvironRank": 20,
+            "communityAndEnvironRank": 47,
+            "Pop": 21646155
+        },
+        {
+            "overall": 30,
+            "State": "Pennsylvania",
+            "totalScore": "50.5400",
+            "emotAndPhysRank": 28,
+            "workEnvironRank": 41,
+            "communityAndEnvironRank": 15,
+            "Pop": 12813969
+        },
+        {
+            "overall": 31,
+            "State": "Rhode Island",
+            "totalScore": "50.4400",
+            "emotAndPhysRank": 30,
+            "workEnvironRank": 31,
+            "communityAndEnvironRank": 29,
+            "Pop": 1056738
+        },
+        {
+            "overall": 32,
+            "State": "Indiana",
+            "totalScore": "50.2000",
+            "emotAndPhysRank": 32,
+            "workEnvironRank": 22,
+            "communityAndEnvironRank": 25,
+            "Pop": 6718616
+        },
+        {
+            "overall": 33,
+            "State": "Maine",
+            "totalScore": "49.8100",
+            "emotAndPhysRank": 36,
+            "workEnvironRank": 10,
+            "communityAndEnvironRank": 30,
+            "Pop": 1342097
+        },
+        {
+            "overall": 34,
+            "State": "Michigan",
+            "totalScore": "49.5200",
+            "emotAndPhysRank": 34,
+            "workEnvironRank": 26,
+            "communityAndEnvironRank": 20,
+            "Pop": 10020472
+        },
+        {
+            "overall": 35,
+            "State": "Wyoming",
+            "totalScore": "48.9000",
+            "emotAndPhysRank": 31,
+            "workEnvironRank": 43,
+            "communityAndEnvironRank": 22,
+            "Pop": 572381
+        },
+        {
+            "overall": 36,
+            "State": "South Carolina",
+            "totalScore": "48.2600",
+            "emotAndPhysRank": 38,
+            "workEnvironRank": 32,
+            "communityAndEnvironRank": 13,
+            "Pop": 5147111
+        },
+        {
+            "overall": 37,
+            "State": "Ohio",
+            "totalScore": "48.1900",
+            "emotAndPhysRank": 35,
+            "workEnvironRank": 36,
+            "communityAndEnvironRank": 16,
+            "Pop": 11718568
+        },
+        {
+            "overall": 38,
+            "State": "Vermont",
+            "totalScore": "48.1800",
+            "emotAndPhysRank": 26,
+            "workEnvironRank": 23,
+            "communityAndEnvironRank": 48,
+            "Pop": 627180
+        },
+        {
+            "overall": 39,
+            "State": "Oregon",
+            "totalScore": "48.0500",
+            "emotAndPhysRank": 43,
+            "workEnvironRank": 4,
+            "communityAndEnvironRank": 24,
+            "Pop": 4245901
+        },
+        {
+            "overall": 40,
+            "State": "Tennessee",
+            "totalScore": "46.1300",
+            "emotAndPhysRank": 41,
+            "workEnvironRank": 8,
+            "communityAndEnvironRank": 40,
+            "Pop": 6833793
+        },
+        {
+            "overall": 41,
+            "State": "New Mexico",
+            "totalScore": "43.3500",
+            "emotAndPhysRank": 39,
+            "workEnvironRank": 47,
+            "communityAndEnvironRank": 35,
+            "Pop": 2096034
+        },
+        {
+            "overall": 42,
+            "State": "Missouri",
+            "totalScore": "42.7600",
+            "emotAndPhysRank": 45,
+            "workEnvironRank": 34,
+            "communityAndEnvironRank": 21,
+            "Pop": 6147861
+        },
+        {
+            "overall": 43,
+            "State": "Mississippi",
+            "totalScore": "41.6300",
+            "emotAndPhysRank": 42,
+            "workEnvironRank": 46,
+            "communityAndEnvironRank": 26,
+            "Pop": 2987895
+        },
+        {
+            "overall": 44,
+            "State": "Kentucky",
+            "totalScore": "39.4200",
+            "emotAndPhysRank": 48,
+            "workEnvironRank": 19,
+            "communityAndEnvironRank": 19,
+            "Pop": 4484047
+        },
+        {
+            "overall": 45,
+            "State": "Alabama",
+            "totalScore": "39.3500",
+            "emotAndPhysRank": 46,
+            "workEnvironRank": 39,
+            "communityAndEnvironRank": 43,
+            "Pop": 4898246
+        },
+        {
+            "overall": 46,
+            "State": "Oklahoma",
+            "totalScore": "38.8900",
+            "emotAndPhysRank": 47,
+            "workEnvironRank": 35,
+            "communityAndEnvironRank": 33,
+            "Pop": 3948950
+        },
+        {
+            "overall": 47,
+            "State": "Alaska",
+            "totalScore": "38.2100",
+            "emotAndPhysRank": 33,
+            "workEnvironRank": 49,
+            "communityAndEnvironRank": 50,
+            "Pop": 735720
+        },
+        {
+            "overall": 48,
+            "State": "Louisiana",
+            "totalScore": "37.1500",
+            "emotAndPhysRank": 44,
+            "workEnvironRank": 50,
+            "communityAndEnvironRank": 41,
+            "Pop": 4652581
+        },
+        {
+            "overall": 49,
+            "State": "Arkansas",
+            "totalScore": "36.6100",
+            "emotAndPhysRank": 50,
+            "workEnvironRank": 29,
+            "communityAndEnvironRank": 23,
+            "Pop": 3026412
+        },
+        {
+            "overall": 50,
+            "State": "West Virginia",
+            "totalScore": "33.4200",
+            "emotAndPhysRank": 49,
+            "workEnvironRank": 48,
+            "communityAndEnvironRank": 32,
+            "Pop": 1791951
+        }
+    ]
+}
