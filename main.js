@@ -301,3 +301,136 @@ var y = d3.scaleLinear()
 
     })  
 
+
+
+
+
+
+
+
+//Create SVG element
+var svg3 = d3.select("#container4")
+  .append("svg")
+  .attr("width", w + margin.left + margin.right)
+  .attr("height", h + margin.top + margin.bottom)
+  .append("g")
+  .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+
+d3.csv("happiness.csv",
+  
+  function(data) {
+    
+        for (var i = 0; i < data.length; i++) {
+          console.log("ii: " +data[i].gini);
+          console.log("happiness: " + data[i].totalScore);
+        } 
+        
+    //title text 
+svg3.append("text")
+        .attr("x", (w/2))             
+        .attr("y", (margin.top -50 ))
+        .attr("text-anchor", "middle")  
+        .style("font-size", "16px") 
+        .style("font-family", "optima") 
+        .style("font-family", "Palatino") 
+        .style("font-weight", "bold"); 
+      //  .text("Correlation of Minimum Wage and Happiness");
+
+   // Add X axis
+var x = d3.scaleLinear()
+  .domain([.4, .54]) 
+  .range([0, w]);
+  //  .range([ 0, (2 * w / 3)  ]);
+  svg3.append("g")
+  .attr("transform", "translate(0," + h + ")")
+  // .attr("transform", "translate(0," + (295 )   + ")")
+  .call(d3.axisBottom(x)
+  .tickFormat(d => d));  
+  // .tickFormat(d3.format("d"))); 
+// Add X axis label:
+  svg3.append("text")
+      .attr("text-anchor", "end")
+      .attr("x", w/2 + margin.left + 160)
+      .attr("y", h + margin.top - 50)
+      .text("Income Inequality");
+  
+var y = d3.scaleLinear()
+      .domain( [30, 70])
+      .range([h, 0]);
+      svg3.append("g")
+   //   .attr("transform", "translate(0," + w  + ")")
+      .call(d3.axisLeft(y)
+      .tickFormat(d => d));  
+// Y axis label:
+  svg3.append("text")
+      .attr("text-anchor", "end")
+      .attr("transform", "rotate(-90)")
+      .attr("y", -margin.left + 60 )
+      .attr("x", -margin.top - h/2 + 220)
+      .text("Happiness Score")
+
+    var tooltip3 = d3.select("#container4").append("div") 
+      .attr("class", "tooltip3")
+      .style("opacity", 0);
+
+
+      // Three function that change the tooltip when user hover / move / leave a cell
+      var mouseover2 = function(d) {
+        tooltip3
+          .style("opacity", 1)
+      }
+
+      var mousemove2 = function(d) {
+        tooltip3
+        .style("left", (d3.mouse(this)[0]) + 400 + "px")
+        .style("top", (d3.mouse(this)[1]) + 900 + "px")
+        .html("State: " + d.State+ "<br/>" 
+          + "Income Inequality: "+ d.gini + "<br/>" 
+          + "Happiness Score: " + d.totalScore 
+            )
+      }
+
+      var mouseleave2 = function(d) {
+        tooltip3
+          .style("opacity", 0)
+
+      }     
+    // Add the points
+    svg3
+      .append("g")     
+      .selectAll("dot")
+      .data(data)
+      .enter()
+      .append("circle")
+        .attr("cx", function(d) { return x(d.gini) } )
+        .attr("cy", function(d) { return y(d.totalScore) } )
+        .attr("r", 4)
+        .attr("fill", "#6baed6")
+        .on("mouseover", mouseover2)
+        .on("mousemove", mousemove2)
+        .on("mouseleave", mouseleave2) 
+
+
+    let linearRegression = d3.regressionLinear()
+      .x((d) => parseFloat(d.gini)) 
+      .y((d) => parseFloat(d.totalScore))
+      .domain([.4, .54]);
+
+    let res = linearRegression(data)
+    //  console.log(res);
+
+  let line = d3.line()
+    .x((d) => x(d[0]))
+    .y((d) => y(d[1]));
+
+  svg3.append("path")
+    .datum(res)
+    .attr("d", line)
+    .style("stroke", "black")
+    .style("opacity", ".5")
+    .style("stroke-width", "2px");
+
+    })  
+
+

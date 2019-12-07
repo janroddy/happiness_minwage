@@ -4,17 +4,24 @@
 }
 
 #container2 {
-
 	text-align: center;
 	width: 50%;
 	
 }
 
 #container3 {
-	text-align: center;
+	text-align: left;
 	padding: 50px;
+  width: 50%;
+}
+/*
+#container4 {
+  text-align: left;
+  padding: 50px;
+  width: 50%;
   border: 1px dashed;
-
+}
+*/
 }
 
 #data-source{
@@ -42,9 +49,9 @@
 
 table {
 	border-collapse: collapse;
-    width: 60%;
-    font-size: 14px;
-    text-align: center;
+  width: 60%;
+  font-size: 14px;
+  text-align: center;
 
 }
 
@@ -89,4 +96,18 @@ table td, table th {
   padding: 10px;
   text-align: left;
 
+}
+
+
+
+#container3 {
+      width: 50%;
+      float: left;
+    }
+#container4 {
+  margin-left: 50%;
+  /* Change this to whatever the width of your left column is*/
+}
+.clear {
+  clear: both;
 }
