@@ -26,15 +26,16 @@ var svg = d3.select("#container1")
 	.attr("height", h + margin.top + margin.bottom)
 	.attr("width", w)
 	.attr("height", h);
-
+/*
 svg.append("text")
 	.attr("x", (w/2))             
-	.attr("y", (margin.top - 5))
+	.attr("y", (margin.top ))
 	.attr("text-anchor", "middle")  
 	.style("font-size", "24px") 
 	.style("font-family", "Palatino") 
 	.style("font-weight", "bold")  
 	.text("State Happiness");	
+*/
 
 //legend
 var legend = d3.legendColor()
@@ -204,6 +205,8 @@ svg2.append("text")
         .style("font-family", "Palatino") 
         .style("font-weight", "bold"); 
       //  .text("Correlation of Minimum Wage and Happiness");
+    //title text 
+
 
    // Add X axis
 var x = d3.scaleLinear()
@@ -251,8 +254,8 @@ var y = d3.scaleLinear()
 
       var mousemove2 = function(d) {
         tooltip2
-        .style("left", (d3.mouse(this)[0]) + 400 + "px")
-        .style("top", (d3.mouse(this)[1]) + 900 + "px")
+        .style("left", (d3.mouse(this)[0]) + 0 + "px")
+        .style("top", (d3.mouse(this)[1]) + 700 + "px")
         .html("State: " + d.State+ "<br/>" 
           + "Minimum Wage: $"+ d.minimumWage + "<br/>" 
           + "Happiness Score: " + d.totalScore 
@@ -322,8 +325,8 @@ d3.csv("happiness.csv",
   function(data) {
     
         for (var i = 0; i < data.length; i++) {
-          console.log("ii: " +data[i].gini);
-          console.log("happiness: " + data[i].totalScore);
+         // console.log("ii: " +data[i].gini);
+         // console.log("happiness: " + data[i].totalScore);
         } 
         
     //title text 
@@ -343,7 +346,7 @@ var x = d3.scaleLinear()
   .range([0, w]);
   //  .range([ 0, (2 * w / 3)  ]);
   svg3.append("g")
-  .attr("transform", "translate(0," + h + ")")
+  .attr("transform", "translate(0," + h  + ")")
   // .attr("transform", "translate(0," + (295 )   + ")")
   .call(d3.axisBottom(x)
   .tickFormat(d => d));  
@@ -351,7 +354,7 @@ var x = d3.scaleLinear()
 // Add X axis label:
   svg3.append("text")
       .attr("text-anchor", "end")
-      .attr("x", w/2 + margin.left + 160)
+      .attr("x", w/2 + margin.left + 180)
       .attr("y", h + margin.top - 50)
       .text("Income Inequality");
   
@@ -367,7 +370,7 @@ var y = d3.scaleLinear()
       .attr("text-anchor", "end")
       .attr("transform", "rotate(-90)")
       .attr("y", -margin.left + 60 )
-      .attr("x", -margin.top - h/2 + 220)
+      .attr("x", -margin.top - h/2 + 150)
       .text("Happiness Score")
 
     var tooltip3 = d3.select("#container4").append("div") 
@@ -376,27 +379,27 @@ var y = d3.scaleLinear()
 
 
       // Three function that change the tooltip when user hover / move / leave a cell
-      var mouseover2 = function(d) {
+      var mouseover3 = function(d) {
         tooltip3
           .style("opacity", 1)
       }
 
-      var mousemove2 = function(d) {
+      var mousemove3 = function(d) {
         tooltip3
-        .style("left", (d3.mouse(this)[0]) + 400 + "px")
-        .style("top", (d3.mouse(this)[1]) + 900 + "px")
+        .style("left", (d3.mouse(this)[0]) + 900 + "px")
+        .style("top", (d3.mouse(this)[1]) + 650 + "px")
         .html("State: " + d.State+ "<br/>" 
           + "Income Inequality: "+ d.gini + "<br/>" 
           + "Happiness Score: " + d.totalScore 
             )
       }
 
-      var mouseleave2 = function(d) {
+      var mouseleave3 = function(d) {
         tooltip3
           .style("opacity", 0)
 
       }     
-    // Add the points
+    // Add the points 
     svg3
       .append("g")     
       .selectAll("dot")
@@ -407,9 +410,9 @@ var y = d3.scaleLinear()
         .attr("cy", function(d) { return y(d.totalScore) } )
         .attr("r", 4)
         .attr("fill", "#6baed6")
-        .on("mouseover", mouseover2)
-        .on("mousemove", mousemove2)
-        .on("mouseleave", mouseleave2) 
+        .on("mouseover", mouseover3)
+        .on("mousemove", mousemove3)
+        .on("mouseleave", mouseleave3) 
 
 
     let linearRegression = d3.regressionLinear()

@@ -1,17 +1,30 @@
 #container1 {
-	
 	text-align: center;
+  width: 50%;
+  float: left;
+
+
 }
+
+#c1 {
+  width: 100%;
+  margin-bottom: -100px;
+ 
+} 
 
 #container2 {
 	text-align: center;
-	width: 50%;
+  margin-left: 50%;
+  margin-bottom: 150px;
+  padding-bottom: 25px;
+
+ 
 	
 }
 
 #container3 {
 	text-align: left;
-	padding: 50px;
+	padding: 20px;
   width: 50%;
 }
 /*
@@ -27,12 +40,15 @@
 #data-source{
   font-family: Veranda;
   font-size: 12px;
+  height: 400px;
+
 
 }
 
 #data-notes {
-	width: 50%;
-	float: right;
+	width:50%;
+  padding: 20px;
+  text-align: left; 
 	
 }
 
@@ -49,7 +65,7 @@
 
 table {
 	border-collapse: collapse;
-  width: 60%;
+  width: 80%;
   font-size: 14px;
   text-align: center;
 
@@ -64,7 +80,7 @@ table th{
 
 table td, table th {
   border: 1px solid #ddd;
-  padding: 8px;
+  padding: 4px;
 }
 
 .tooltip1 { 
@@ -98,6 +114,21 @@ table td, table th {
 
 }
 
+.tooltip3 {
+  position: absolute;
+  padding: 2px;       
+  font: 12px sans-serif;    
+  background: #fff; 
+  border: 0px;        
+  pointer-events: none;   
+  border: solid, 1px; 
+  font-family: Georgia;
+  background-color: white; 
+  padding: 10px;
+  text-align: left;
+
+}
+
 
 
 #container3 {
@@ -110,4 +141,5 @@ table td, table th {
 }
 .clear {
   clear: both;
+  
 }
