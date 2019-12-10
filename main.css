@@ -2,6 +2,7 @@
 	text-align: center;
   width: 50%;
   float: left;
+  font-family: Perpetua;
 
 
 }
@@ -9,7 +10,7 @@
 #c1 {
   width: 100%;
   margin-bottom: -100px;
- 
+  font-family: Cambria;
 } 
 
 #container2 {
@@ -38,7 +39,7 @@
 }
 
 #data-source{
-  font-family: Veranda;
+  font-family: Courier;
   font-size: 12px;
   height: 400px;
 
@@ -49,6 +50,8 @@
 	width:50%;
   padding: 20px;
   text-align: left; 
+  font-size: 16px;
+  font-family:  Lucida Bright;
 	
 }
 
@@ -63,10 +66,16 @@
 	opacity: .2;
 }
 
+#hypothesis {
+  font-size: 20px;
+  font-family: Courier New;
+  margin-left: 20px;
+}
+
 table {
 	border-collapse: collapse;
-  width: 80%;
-  font-size: 14px;
+  width: 70%;
+  font-size: 16px;
   text-align: center;
 
 }
@@ -80,7 +89,14 @@ table th{
 
 table td, table th {
   border: 1px solid #ddd;
-  padding: 4px;
+  padding: 10px;
+}
+
+#title {
+  text-align: center;
+  font-family: Copperplate;
+  font-size: 40px;
+
 }
 
 .tooltip1 { 
